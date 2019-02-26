@@ -5,23 +5,23 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Host", "DemoHost\Demo.Host.csproj", "{C6321D8D-B8A7-4DF4-980F-24C1E1ABB1B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Service", "Service\Demo.Service.csproj", "{DC0CF047-B46B-44CF-A92E-CE55D1640293}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Service", "Service\Demo.Service.csproj", "{DC0CF047-B46B-44CF-A92E-CE55D1640293}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.IService", "IService\Demo.IService.csproj", "{3E1960A2-5374-42E5-A6AF-CAEBACB9992B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.IService", "IService\Demo.IService.csproj", "{3E1960A2-5374-42E5-A6AF-CAEBACB9992B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Host", "1.Host", "{59700AC8-6155-44D5-AB1A-F3ACD772FD3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Service", "2.Service", "{B5825929-7A95-481B-95BC-84E553BC0A34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Core", "Core\Demo.Core.csproj", "{F88DFCFA-B993-4A40-BD96-1A6F970089A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Core", "Core\Demo.Core.csproj", "{F88DFCFA-B993-4A40-BD96-1A6F970089A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.EntitFrameworkCore", "EntitFrameworkCore\Demo.EntitFrameworkCore.csproj", "{1E12DF16-3F29-4A64-AB64-17031AE28E23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.EntitFrameworkCore", "EntitFrameworkCore\Demo.EntitFrameworkCore.csproj", "{1E12DF16-3F29-4A64-AB64-17031AE28E23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Domain", "3.Domain", "{5345C6A7-59D3-4CFD-BAE2-5006A920AFE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Test", "4.Test", "{D27ECCE1-A4B1-4028-9B10-1E6252D4F38B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{F5E0567B-DE7A-45DC-880B-23FF361F7375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Test", "XUnitTestProject1\Demo.Test.csproj", "{F5E0567B-DE7A-45DC-880B-23FF361F7375}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
