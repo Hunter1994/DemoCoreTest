@@ -9,5 +9,8 @@ namespace Demo.IService
     {
         Person Get();
         IEnumerable<Person> GetList();
+
+        IEnumerable<Person> GetContainProject();
+
     }
 }

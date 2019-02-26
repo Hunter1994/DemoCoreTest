@@ -9,6 +9,7 @@ namespace Demo.EntitFrameworkCore.Reposotory
     public class DemoContext:DbContext
     {
         public DbSet<Person> People { get; set; }
+        public DbSet<Project> Project { get; set; }
 
         public DemoContext()
         {

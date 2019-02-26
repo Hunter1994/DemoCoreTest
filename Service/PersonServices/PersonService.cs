@@ -4,6 +4,7 @@ using Demo.IService;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Demo.Service
 {
@@ -11,10 +12,15 @@ namespace Demo.Service
     {
         private IBaseRepository<Person> _baseRepository;
         private IPersonRepository _personRepository;
-        public PersonService(IBaseRepository<Person> baseRepository, IPersonRepository personRepository)
+        private IBaseRepository<Project> _projectRepository;
+
+        public PersonService(IBaseRepository<Person> baseRepository
+             ,IPersonRepository personRepository
+            ,IBaseRepository<Project> projectRepository)
         {
             _baseRepository = baseRepository;
             _personRepository = personRepository;
+            _projectRepository = projectRepository;
         }
         public Person Get()
         {
@@ -25,6 +31,14 @@ namespace Demo.Service
         public IEnumerable<Person> GetList()
         {
             return _personRepository.GetList();
+        }
+
+        public IEnumerable<Person> GetContainProject()
+        {
+            var persons = (from person in _baseRepository.GetList(x => true)
+                           join project in _projectRepository.GetList(x => true) on person.Id equals project.PersonId
+                           select person).ToList();
+            return persons;
         }
     }
 }

@@ -21,5 +21,10 @@ namespace Demo.EntitFrameworkCore.Reposotory
             return _context.Set<T>().Where(where).FirstOrDefault();
         }
 
+        public IQueryable<T> GetList(Expression<Func<T, bool>> where)
+        {
+            return _context.Set<T>().Where(where);
+        }
+
     }
 }

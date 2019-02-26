@@ -31,5 +31,10 @@ namespace Demo.Host.Controllers
             return _baseRepository.Get(r => true);
         }
 
+        public IEnumerable<Person> GetContainProject()
+        {
+            return _personService.GetContainProject();
+        }
+
     }
 }
