@@ -9,9 +9,8 @@ using System.Threading.Tasks;
 
 namespace Demo.Host.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]/[action]")]
-    public class PersonController:Controller
+    
+    public class PersonController: BaseController
     {
         private IPersonService _personService;
         private IBaseRepository<Person> _baseRepository;
@@ -28,6 +27,9 @@ namespace Demo.Host.Controllers
 
         public Person Get()
         {
+           var a= _personService.SumAge();
+           var b= _personService.SumNum();
+
             return _baseRepository.Get(r => true);
         }
 

@@ -8,5 +8,8 @@ namespace Demo.Core.IReposotory
     public interface IPersonRepository
     {
         IEnumerable<Person> GetList();
+        int? SumAge();
+
+        int SumNum();
     }
 }

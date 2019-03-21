@@ -11,6 +11,8 @@ namespace Demo.IService
         IEnumerable<Person> GetList();
 
         IEnumerable<Person> GetContainProject();
+        int? SumAge();
+        int SumNum();
 
     }
 }

@@ -40,5 +40,15 @@ namespace Demo.Service
                            select person).ToList();
             return persons;
         }
+
+        public int? SumAge()
+        {
+            return _personRepository.SumAge();
+        }
+
+        public int SumNum()
+        {
+            return _personRepository.SumNum();
+        }
     }
 }

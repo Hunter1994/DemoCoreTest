@@ -26,5 +26,6 @@ namespace Demo.EntitFrameworkCore.Reposotory
             return _context.Set<T>().Where(where);
         }
 
+       
     }
 }

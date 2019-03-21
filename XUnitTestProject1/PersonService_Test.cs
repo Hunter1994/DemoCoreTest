@@ -65,6 +65,20 @@ namespace XUnitTestProject1
             persons.Count().ShouldBe(1);
         }
 
+        [Fact]
+        public void SumAge_Is0()
+        {
+            var persons = _personService.SumAge();
+            persons.ShouldBe(0);
+        }
+
+        [Fact]
+        public void SumNum_Is0()
+        {
+            var persons = _personService.SumNum();
+            persons.ShouldBe(0);
+        }
+
 
     }
 }

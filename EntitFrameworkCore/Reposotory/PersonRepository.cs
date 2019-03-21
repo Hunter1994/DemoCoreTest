@@ -17,5 +17,14 @@ namespace Demo.EntitFrameworkCore.Reposotory
         {
             return _context.People.ToList();
         }
+
+        public int? SumAge()
+        {
+            return _context.People.Sum(r => r.Age);
+        }
+        public int SumNum()
+        {
+            return _context.People.Sum(r => r.Num);
+        }
     }
 }
